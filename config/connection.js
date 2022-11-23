@@ -5,7 +5,7 @@ const state = {
 
 module.exports.connect = function (done) {
    // const url = "mongodb://localhost:27017";
-  const url = 'mongodb+srv://safeermohd:safeer123@ecommerce.f6l1izv.mongodb.net/test'
+  const url = process.env.DB_URL;
   const dbname = "sfrWatch";
 
   mongoClient.connect(url, (err, data) => {
