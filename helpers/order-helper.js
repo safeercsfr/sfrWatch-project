@@ -6,10 +6,12 @@ const objectId = require("mongodb").ObjectId;
 const Razorpay = require("razorpay");
 const paypal = require("paypal-rest-sdk");
 
+console.log('hi kutta',process.env.KEY_ID);
 var instance = new Razorpay({
   key_id: process.env.KEY_ID,
   key_secret: process.env.KEY_SECRET,
 });
+console.log(process.env.KEY_ID);
 
 paypal.configure({
   mode: "sandbox", //sandbox or live
