@@ -473,7 +473,6 @@ router.post("/order-status", verifyAdminLogin, async (req, res) => {
       orderHelper.cancelOrder(orderId).then(async () => {
         let order = await orderHelper.getOrder(orderId);
         if (order) {
-          console.log(status.status);
           if (order.paymentMethod == "COD") {
             res.redirect("/admin/all-orders");
           } else {

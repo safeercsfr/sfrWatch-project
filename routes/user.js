@@ -49,7 +49,6 @@ const verifyBlockUser = async (req, res, next) => {
     res.redirect("/");
   }
 };
-console.log('hi monu',process.env.SERVICE_SID);
 const serviceSID = process.env.SERVICE_SID;
 const accountSID = process.env.ACCOUNT_SID;
 const authToken = process.env.AUTH_TOKEN;
