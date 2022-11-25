@@ -254,6 +254,7 @@ module.exports = {
         .get()
         .collection(collection.PRODUCT_COLLECTION)
         .findOne({ _id: objectId(details.product) });
+        if(stockCount.stock){
       if (details.quantity == stockCount.stock && details.count == 1) {
         reject({status:true});
       } else if(details.quantity == 3 && details.count == 1) {
@@ -283,11 +284,14 @@ module.exports = {
                 $inc: { "products.$.quantity": details.count },
               }
             )
-            .then((response) => {
+            .then(() => {
               resolve({ status: true });
             });
         }
       }
+    }else{
+      reject({noStock:true})
+    }
     });
   },
   getCartProductList: (userId) => {

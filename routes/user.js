@@ -318,6 +318,15 @@ router.get("/view-catwise/:category", async (req, res) => {
 // cart page
 router.get("/cart", verifyLogin, verifyBlockUser, async (req, res) => {
   let products = await cartHelper.getCartProducts(req.session.user._id);
+  let outOfStock= false
+  // let pro = products.product._id
+  products.forEach(async (element) => {
+    console.log(element.product.stock);
+    if(element.product.stock == 0){
+      outOfStock=true
+    }
+  });
+  console.log(outOfStock);
   let total = await cartHelper.getTotalAmount(req.session.user._id);
   let wishlistCount = await wishlistHelper.getWishlistCount(
     req.session.user._id
@@ -328,6 +337,7 @@ router.get("/cart", verifyLogin, verifyBlockUser, async (req, res) => {
       user: req.session.user,
       total,
       wishlistCount,
+      outOfStock,
     });
   } else {
     res.render("user/empty-cart", {
@@ -383,7 +393,7 @@ router.post(
       response.cartSubTotal = await cartHelper.getCartSubTotal(userId, proId);
       res.json(response);
     }).catch((response)=>{
-      if(response.status){
+      if(response.status || response.noStock ){
         res.json({noStock:true});
       }else {
         res.json({maxLimitStock:true});
@@ -394,7 +404,6 @@ router.post(
 
 // place order
 router.get("/place-order", verifyLogin, verifyBlockUser, async (req, res) => {
-  // let product = await orderHelper.getCartProductList(req.session.user._id);
   let cartCount = await cartHelper.getCartCount(req.session.user._id);
   let wishlistCount = await wishlistHelper.getWishlistCount(
     req.session.user._id

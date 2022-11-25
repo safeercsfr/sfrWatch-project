@@ -55,7 +55,11 @@
                             <li><span>total:</span> <span id="total">₹{{total}}</span></li>
                         </ul>
                         <div class="cart-btn mt-100">
+                            {{#if outOfStock}}
+                            <small class="text-danger">No stock please remove this product</small>
+                            {{else}}
                             <a href="/place-order" class="btn amado-btn w-100">Place Order</a>
+                            {{/if}}
                         </div>
                     </div>
                 </div>
