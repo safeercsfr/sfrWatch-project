@@ -49,10 +49,12 @@ $(document).ready(function () {
       price: {
         required: true,
         number: true,
+        digits:true,
       },
       stock: {
         required: true,
         number: true,
+        digits:true,
       },
       description: {
         required: true,

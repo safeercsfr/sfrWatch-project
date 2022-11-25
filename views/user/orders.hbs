@@ -73,15 +73,19 @@
                                     {{#if isCancelled}}
                                     <td class="text-danger">Cancelled Successully</td>
                                     {{else}}
+                                    {{#if isReturned}}
+                                    <td class="text-secondary">
+                                        <a href="/invoice/{{this._id}}" class="btn btn-outline-dark">Invoice</a>
+                                        Returned Successully
+                                    </td>
+                                    {{else}}
                                     {{#if isDelivered}}
                                     <td><a onclick="returnOrder(event)" href="/return-order/{{this._id}}"
                                             class="btn btn-outline-dark" style="width: 5rem;">Return</a>
                                         <a href="/invoice/{{this._id}}" class="btn btn-outline-dark">Invoice</a>
                                     </td>
                                     {{else}}
-                                    {{#if isReturned}}
-                                    <td class="text-secondary">Returned Successully</td>
-                                    {{else}}
+                                    
                                     <td><a onclick="cancelOrder(event)" href="/cancel-order/{{this._id}}"
                                             class="btn btn-outline-dark">Cancel</a></td>
                                     {{/if}}

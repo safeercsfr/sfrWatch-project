@@ -320,12 +320,14 @@ router.get("/cart", verifyLogin, verifyBlockUser, async (req, res) => {
   let products = await cartHelper.getCartProducts(req.session.user._id);
   let outOfStock= false
   // let pro = products.product._id
-  products.forEach(async (element) => {
-    console.log(element.product.stock);
-    if(element.product.stock == 0){
-      outOfStock=true
-    }
-  });
+  if(products){
+    products.forEach(async (element) => {
+      console.log(element.product.stock);
+      if(element.product.stock == 0){
+        outOfStock=true
+      }
+    });
+  }
   console.log(outOfStock);
   let total = await cartHelper.getTotalAmount(req.session.user._id);
   let wishlistCount = await wishlistHelper.getWishlistCount(

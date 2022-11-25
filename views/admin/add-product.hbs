@@ -19,33 +19,33 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-outline mb-2">
-                  <input type="text" name="name" id="" class="form-control form-control-lg" />
-                  <label class="form-label" for="form2Example17">Product Name</label>
+                  <input type="text" name="name" id="name" class="form-control form-control-lg" />
+                  <label class="form-label" for="name">Product Name</label>
                 </div>
                 <div class="form-outline mb-3">
-                  <input type="text" name="description" id="form2Example27" class="form-control form-control-lg" />
-                  <label class="form-label" for="form2Example27">Description</label>
+                  <input type="text" name="description" id="description" class="form-control form-control-lg" />
+                  <label class="form-label" for="description">Description</label>
                 </div>
 
               </div>
               <div class="col-md-6">
                 <div class="form-outline mb-2">
-                  <input type="text" name="price" id="form2Example17" class="form-control form-control-lg" />
-                  <label class="form-label" for="form2Example17">Price</label>
+                  <input type="text" name="price" id="price" class="form-control form-control-lg" />
+                  <label class="form-label" for="price">Price</label>
                 </div>
                 <div class="form-outline mb-2">
-                  <input type="text" name="stock" id="form2Example17" class="form-control form-control-lg" />
-                  <label class="form-label" for="form2Example17">Stock</label>
+                  <input type="text" name="stock" id="stock" class="form-control form-control-lg" />
+                  <label class="form-label" for="stock">Stock</label>
                 </div>
               </div>
             </div>
             <div class="form-outline mb-2 ">
-              <select name="category" id="" class="w-100 form-control">
+              <select name="category" id="category" class="w-100 form-control">
                 {{#each allCategoryDetails}}
                 <option>{{this.category}}</option>
                 {{/each}}
               </select>
-              <label class="form-label" for="form2Example17">Category</label>
+              <label class="form-label" for="category">Category</label>
             </div>
             <!-- cropping is done here -->
             <div id="crop">
