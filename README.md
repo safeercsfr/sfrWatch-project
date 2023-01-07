@@ -1,7 +1,6 @@
 sfrwatch is an E-commerce website which is dealing with selling of multi branded watches.
 
 
-
 Technologies used :
 
 ❖ JavaScript
