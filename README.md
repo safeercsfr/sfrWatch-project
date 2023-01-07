@@ -1,8 +1,8 @@
 <h1 align="center">sfrwatch Ecommerce website.</h1><hr>
-<h3 align="center">sfrwatch is an E-commerce website which is dealing with selling of watches .</h3><hr>
+<h2 align="center">sfrwatch is an E-commerce website which is dealing with selling of watches .</h2><hr>
 
 
-<h4>Technologies used :</h4>
+<h3>Technologies used :</h3>
 <hr>
 
 <h6>❖ JavaScript</h6>
@@ -15,7 +15,7 @@
 <h6>❖ HTML</h6>
 <h6>❖ CSS</h6>
 
-<h4>Features involved:</h4>
+<h3>Features involved:</h3>
 <hr>
 
 <h6>❖ User & Admin Authentication</h6>
