@@ -1,43 +1,46 @@
-sfrwatch is an E-commerce website which is dealing with selling of multi branded watches.
+<h1 align="center">sfrwatch Ecommerce website.</h1><hr>
+<h3 align="center">sfrwatch is an E-commerce website which is dealing with selling of watches .</h3><hr>
 
 
-Technologies used :
+<h4>Technologies used :</h4>
+<hr>
 
-❖ JavaScript
-❖ Node js
-❖ Express js
-❖ MongoDB Atlas
-❖ Handlebars
-❖ Jquery
-❖ Bootstrap
-❖ HTML
-❖ CSS
+<h6>❖ JavaScript</h6>
+<h6>❖ Node jst</h6>
+<h6>❖ Express js</h6>
+<h6>❖ MongoDB Atlas</h6>
+<h6>❖ Handlebars</h6>
+<h6>❖ Jquery</h6>
+<h6>❖ Bootstrap</h6>
+<h6>❖ HTML</h6>
+<h6>❖ CSS</h6>
 
-Features involved:
+<h4>Features involved:</h4>
+<hr>
 
-❖ User & Admin Authentication
-❖ OTP Login
-❖ Advanced Payment Options(RazorPay,Paypal)
-❖ Cash on Delivery
-❖ User Wallet
-❖ Image Cropping
-❖ Responsive Design
-❖ High-Resolution Photos
-❖ Special Offers & Coupons
-❖ Add To Cart
-❖ Wishlist
-❖ Image Zooming
-❖ Related Items
-❖ Order History
-❖ Return Policy
-❖ Multiple Address Management
-❖ User Block/Unblock
-❖ Chart & Graph reports in Admin side
-❖ Sales Report
-❖ Invoice
-❖ Form Validation
-❖ Product & Category Management in Admin side
-❖ User Profile
-❖ Profile Picture
-❖ Order Management
-❖ User Management
+<h6>❖ User & Admin Authentication</h6>
+<h6>❖ OTP Login</h6>
+<h6>❖ Advanced Payment Options(RazorPay,Paypal)</h6>
+<h6>❖ Cash on Delivery</h6>
+<h6>❖ User Wallet</h6>
+<h6>❖ Image Cropping</h6>
+<h6>❖ Responsive Design</h6>
+<h6>❖ High-Resolution Photos</h6>
+<h6>❖ Special Offers & Coupons</h6>
+<h6>❖ Add To Cart</h6>
+<h6>❖ Wishlist</h6>
+<h6>❖ Image Zooming</h6>
+<h6>❖ Related Items</h6>
+<h6>❖ Order History</h6>
+<h6>❖ Return Policy</h6>
+<h6>❖ Multiple Address Management</h6>
+<h6>❖ User Block/Unblock</h6>
+<h6>❖ Chart & Graph reports in Admin side</h6>
+<h6>❖ Sales Report</h6>
+<h6>❖ Invoice</h6>
+<h6>❖ Form Validation</h6>
+<h6>❖ Product & Category Management in Admin side</h6>
+<h6>❖ User Profile</h6>
+<h6>❖ Profile Picture</h6>
+<h6>❖ Order Management</h6>
+<h6>❖ User Management</h6>
