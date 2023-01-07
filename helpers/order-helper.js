@@ -462,8 +462,8 @@ module.exports = {
           payment_method: "paypal",
         },
         redirect_urls: {
-          return_url: "http://localhost:3000/order-placed",
-          cancel_url: "http://localhost:3000/place-order",
+          return_url: "https://sfrwatch.tk/order-placed",
+          cancel_url: "https://sfrwatch.tk/place-order",
         },
         transactions: [
           {
